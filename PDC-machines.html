@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  user-scalable="no">
+    <title>PCD Machines</title>
+
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="assets/css/bootstrap-5.1/bootstrap.min.css">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+    <!-- poppins google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function(){
+            $('#navigation-bar').load('navigation-bar.html');
+        });     
+        $(function(){
+            $('#footer').load('footer.html');
+        });  
+    </script>
+
+
+    <!-- css file -->
+    <link rel="stylesheet" href="assets/css/header-footer.css">
+    <link rel="stylesheet" href="assets/css/machine.css">
+</head>
+
+<body>
+
+    <!-- header starts from here -->
+    <header id="navigation-bar"></header>
+    <!-- header ends here -->
+
+
+    <section class="brands-logo">
+        <div class="container">
+            <h1>PCD Machines</h1>
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-5 offset-1" >
+                    <div class="product-card">
+                        <img src="assets/images/PDC Machines/Auto Die Coat Mixing.png"                        
+                            alt="product10">
+                       <h2>Auto Die Coat Mixing</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-5 offset-1" >
+                    <div class="product-card">
+                        <img src="assets/images/PDC Machines/Auto Ladle & Auto Spray in PDC Machine.png"                        
+                            alt="product10">
+                        <h2>Auto Ladle & Auto Spray in PDC Machine</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-5 offset-1" >
+                    <div class="product-card">
+                        <img src="assets/images/PDC Machines/Gas Fired Central.png"                        
+                            alt="product10">
+                            <h2>Gas Fired Central</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-5 offset-1" >
+                    <div class="product-card">
+                        <img src="assets/images/PDC Machines/Material Feed to Electric Holding Furnace.png"                        
+                        alt="product10">
+                        <h2>Material Feed to Electric Holding Furnace</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-5 offset-1" >
+                    <div class="product-card">
+                        <img src="assets/images/PDC Machines/N2 Degassing.png"                       
+                            alt="product10">
+                            <h2>N2 Degassing</h2>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer starts from here -->
+    <div id="footer"></div>
+    <!-- footer section ends here -->
+
+
+
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script>
+            $(function () {
+    
+                $('.hamburgur-menu i').css({
+                    color: '#fff'
+                })
+    
+    
+                $('.hamburgur-menu').click(function () {
+                    if ($(window).width() < 700) {
+                        $(window).scroll(function (event) {
+                            var scroll = $(window).scrollTop();
+                            var windowWidth = $(window).width();
+                            if (scroll > 500) {
+                                $('nav ul').css({
+                                    backgroundColor: '#fff'
+                                });
+                                $('nav ul li a').css({
+                                    color: '#000'
+                                });
+                            }
+                            if (scroll < 500) {
+                                $('nav ul').css({
+                                    backgroundColor: '#fff'
+                                });
+                                $('nav ul li a').css({
+                                    color: '#000'
+                                });
+                            }
+                        });
+                    }
+                    $('nav ul').css({
+                        flexDirection: 'column',
+                        textAlign: 'center',
+                        position: 'absolute',
+                        left: '0px',
+                        top: '70px',
+                        width: '100%',
+                        backgroundColor: '#fff'
+                    });
+                    $('nav ul li').css({
+                        marginBottom: '10px'
+                    });
+                    $('nav ul li a').css({
+                        color: '#000'
+                    });
+    
+                    $('nav ul').slideToggle();
+    
+                });
+    
+    
+    
+                $(window).scroll(function (event) {
+                    var scroll = $(window).scrollTop();
+                    console.log(scroll);
+                    var windowWidth = $(window).width();
+                    console.log(windowWidth);
+                    if (scroll > 1) {
+                        $('header').css({
+                            background: '#fff',
+                            boxShadow: '0px 0px 20px -5px #000'
+                        });
+                        $('header nav ul li a').css({
+                            color: '#000'
+                        });
+                        $('.hamburgur-menu i').css({
+                            color: '#000'
+                        })
+                    }
+                    if (scroll < 1) {
+                        $('header').css({
+                            background: 'transparent',
+                            boxShadow: 'none'
+                        });
+                        $('header nav ul li a').css({
+                            color: '#fff'
+                        });
+                        $('.hamburgur-menu i').css({
+                            color: '#fff'
+                        })
+                    }
+                });
+            });
+            
+        </script>
+
+</body>
+
+</html>
