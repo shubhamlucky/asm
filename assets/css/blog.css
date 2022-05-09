@@ -6,55 +6,38 @@
   width: 100%;
 }
 
-.about-us {
-  padding: 100px 0px;
+.blog {
+  margin: 100px 0px;
 }
-.about-us .about-us-content {
-  box-sizing: border-box;
-  padding: 0px 90px;
+.blog .blog-card .question {
+  background-color: #009ed6;
+  padding: 50px;
+  height: 100%;
 }
-.about-us .about-us-content img {
-  width: 200px;
-  margin-bottom: 20px;
+.blog .blog-card .question img {
+  width: 100px;
+  height: 100px;
 }
-.about-us .about-us-content h2 {
-  font-size: 25px;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-.about-us .about-us-content h3 {
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-.about-us .about-us-content p {
-  text-align: justify;
-  color: #979c88;
-}
-.about-us .about-us-img img {
-  width: 100%;
-}
-
-.mission-and-vission .mission h2 {
-  position: relative;
-  z-index: 9;
-  margin-bottom: 20px;
+.blog .blog-card .question h2 {
+  margin-top: 20px;
+  color: #fff;
+  text-transform: capitalize;
   display: inline-block;
+  font-weight: bold;
+  font-size: 25px;
 }
-.mission-and-vission .mission h2::after {
-  position: absolute;
-  top: 45px;
-  left: 5px;
-  width: 90%;
-  height: 2px;
-  content: "";
-  background-color: #ed1a23;
+.blog .blog-card .answer {
+  height: 100%;
+  background-color: #eee;
+  padding: 50px;
 }
-.mission-and-vission .mission ul {
-  list-style: disc;
+.blog .blog-card .answer img {
+  width: 100px;
+  height: 100px;
 }
-.mission-and-vission .mission ul li {
-  margin-bottom: 20px;
-  color: #009ed6;
+.blog .blog-card .answer p {
+  margin-top: 20px;
+  text-align: justify;
 }
 
 .contact-us {
@@ -102,4 +85,4 @@
     width: 100%;
     min-height: 200px;
   }
-}/*# sourceMappingURL=about-us.css.map */
+}/*# sourceMappingURL=blog.css.map */

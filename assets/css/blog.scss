@@ -1,0 +1,99 @@
+$primary-color: #009ed6;
+$secondary-color: #ed1a23;
+$third-color: #979c88;
+
+.container {
+    max-width: 90%;
+}
+
+.about-banner{
+    img{
+        width: 100%;
+    }
+}
+
+.blog{
+    margin: 100px 0px;
+    .blog-card{
+        .question{
+            background-color:$primary-color;
+            padding: 50px;
+            height: 100%;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            h2 {
+                margin-top: 20px;
+                color: #fff;
+                text-transform: capitalize;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 25px;
+            }
+        }
+        .answer{
+            height: 100%;
+            background-color: #eee;
+            padding: 50px;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            p{
+                margin-top: 20px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.contact-us{
+    margin: 100px 0px;
+    .heading {
+        text-align: center;
+        margin-bottom: 50px;
+        h2 {
+            color: $primary-color;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 10px 0px;
+            font-weight: bold;
+            font-size: 36px;            
+            // border-bottom: 1px solid $secondary-color;
+        }
+    }
+    .contact-card{
+    
+        text-align: center;
+        i{
+            color: $primary-color;
+            font-size: 40px;
+        }
+        p,span{
+            color: $third-color;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .about-us {
+            padding: 50px 0px;
+        .about-us-content {
+            padding: 0px 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .about-us{
+        .about-us-content {
+            padding: 0px 0px;
+        }
+    }   
+    .about-banner img {
+        width: 100%;
+        min-height: 200px;
+      }
+}

@@ -4,7 +4,7 @@ $(function () {
     // home slider
     $('.home-slider').owlCarousel({
         loop: true,
-        margin: 30,
+        margin: 0,
         nav: false,
         autoplay: true,
         autoplayTimeout: 4000,

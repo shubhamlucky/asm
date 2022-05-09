@@ -20,6 +20,9 @@ $(function(){
             $('header nav ul li a').css({
                 color:'#000'
             });
+            $('header nav ul li').css({
+                color:'#000'
+            });
             $('.hamburgur-menu i').css({
                 color: '#000'
             })
@@ -31,6 +34,15 @@ $(function(){
             });
             $('header nav ul li a').css({
                 color:'#fff'
+            });
+            $('header nav ul li').css({
+                color:'#fff'
+            });
+            $('header nav ul .products .products-dropdown li ').css({
+                color:'#000'
+            });
+            $('header nav ul .products .products-dropdown li a').css({
+                color:'#000'
             });
             $('.hamburgur-menu i').css({
                 color: '#fff'

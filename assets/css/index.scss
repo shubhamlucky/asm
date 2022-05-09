@@ -121,6 +121,7 @@ body {
         margin-bottom: 30px;       
         position: relative;
         p {
+            text-align: justify;
             position: relative;
             z-index: 9;
             line-height: 30px;
@@ -132,7 +133,11 @@ body {
         
         .director-name{
             font-weight: bold;            
-            border-radius: 5px;            
+            text-align: right;
+            border-radius: 5px;
+            i{
+                margin-right: 10px;
+            }            
         }
     }
 }
